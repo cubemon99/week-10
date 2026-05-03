@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/W/Documents/GitHub/week%2010/hw2/app/page.tsx"],"sourcesContent":["\"use client\"\nimport { useRouter } from \"next/navigation\";\nimport { useState, useEffect } from \"react\";\n\n\n\nexport default function Home() {\n\n  //階段名稱      路由規劃\n  //1. 歡迎畫面   /\n  //2. 答題      /question\n  //3. 準備看結果 /prepare\n  //4. 看結果    /result\n  // https://psy-test.com/love/result?id=10\n  \n  \n\n  return (\n    <>\n\n      \n    </>\n  );\n}\n"],"names":["Home"],"mappings":";;;;;AAAA;;AAMe,SAASA;IAEtB,gBAAgB;IAChB,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,mBAAmB;IACnB,yCAAyC;IAIzC,qBACE;AAKJ"}},
+    {"offset": {"line": 24, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/W/Documents/GitHub/week%2010/hw2/node_modules/next/src/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = (\n  require('../../module.compiled') as typeof import('../../module.compiled')\n).vendored['react-ssr']!.ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":"AAAAA,OAAOC,OAAO,GACZC,QAAQ,gIACRC,QAAQ,CAAC,YAAY,CAAEC,kBAAkB","ignoreList":[0]}}]
+}

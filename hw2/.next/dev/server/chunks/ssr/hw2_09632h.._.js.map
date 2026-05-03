@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/W/Documents/GitHub/week%2010/hw2/app/question/page.tsx"],"sourcesContent":["\"use client\"\nimport { useState, useEffect } from \"react\";\n\nexport default function Question() {\n\n\n  return (\n    <>\n      答題\n    </>\n  );\n}\n"],"names":["Question"],"mappings":";;;;;AAAA;;AAGe,SAASA;IAGtB,qBACE;kBAAE;;AAIN"}},
+    {"offset": {"line": 20, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/W/Documents/GitHub/week%2010/hw2/node_modules/next/src/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = (\n  require('../../module.compiled') as typeof import('../../module.compiled')\n).vendored['react-ssr']!.ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":"AAAAA,OAAOC,OAAO,GACZC,QAAQ,gIACRC,QAAQ,CAAC,YAAY,CAAEC,kBAAkB","ignoreList":[0]}}]
+}
