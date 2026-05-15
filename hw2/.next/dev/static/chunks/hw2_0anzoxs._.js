@@ -4,158 +4,104 @@
 
 __turbopack_context__.s([
     "default",
-    ()=>Home
+    ()=>Result
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$hw2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/hw2/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$hw2$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/hw2/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$hw2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/hw2/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+(()=>{
+    const e = new Error("Cannot find module '@/store/store'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
-function Home() {
+;
+function Result() {
     _s();
-    let questionData = [
-        {
-            title: "question A",
-            options: [
-                {
-                    text: "option A",
-                    value: 1
-                },
-                {
-                    text: "option B",
-                    value: 2
-                },
-                {
-                    text: "option C",
-                    value: 3
-                }
-            ]
-        },
-        {
-            title: "question B",
-            options: [
-                {
-                    text: "option A",
-                    value: 1
-                },
-                {
-                    text: "option B",
-                    value: 2
-                },
-                {
-                    text: "option C",
-                    value: 3
-                }
-            ]
-        },
-        {
-            title: "question C",
-            options: [
-                {
-                    text: "option A",
-                    value: 1
-                },
-                {
-                    text: "option B",
-                    value: 2
-                },
-                {
-                    text: "option C",
-                    value: 3
-                }
-            ]
+    const psyData = usePsyStore({
+        "Result.usePsyStore[psyData]": (state)=>state.psyData
+    }["Result.usePsyStore[psyData]"]);
+    const [psyResult, setPsyResult] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$hw2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$hw2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$hw2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {}, void 0, false));
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$hw2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Result.useEffect": ()=>{
+            getResult();
         }
-    ];
-    const [questionIndex, setQuestionIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$hw2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
-    function nextQuset(optionIndex) {
-        console.log("使用者選擇：" + optionIndex);
-        if (questionIndex != questionData.length - 1) {
-            console.log("下一題");
-            setQuestionIndex(questionIndex + 1);
+    }["Result.useEffect"], [
+        psyData.score
+    ]);
+    function getResult() {
+        if (psyData.score < 3) {
+            setPsyResult(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$hw2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: [
+                    "結果 A",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$hw2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "https://google.com",
+                        children: "GOOGLE"
+                    }, void 0, false, {
+                        fileName: "[project]/hw2/app/question/page.tsx",
+                        lineNumber: 21,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/hw2/app/question/page.tsx",
+                lineNumber: 19,
+                columnNumber: 9
+            }, this));
+        } else if (psyData.score >= 3 && psyData.score < 7) {
+            setPsyResult(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$hw2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: "結果 B"
+            }, void 0, false, {
+                fileName: "[project]/hw2/app/question/page.tsx",
+                lineNumber: 25,
+                columnNumber: 20
+            }, this));
         } else {
-            console.log("準備進入結果");
+            setPsyResult(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$hw2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: "結果 C"
+            }, void 0, false, {
+                fileName: "[project]/hw2/app/question/page.tsx",
+                lineNumber: 27,
+                columnNumber: 20
+            }, this));
         }
     }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$hw2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$hw2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$hw2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex flex-col items-center justify-center gap-4",
+            className: "flex flex-col items-center gap-4",
             children: [
-                "answer question",
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$hw2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$hw2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            children: [
-                                " ",
-                                questionData[questionIndex].title
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/hw2/app/question/page.tsx",
-                            lineNumber: 90,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$hw2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            onClick: ()=>nextQuset(0),
-                            children: [
-                                " ",
-                                questionData[questionIndex].options[0].text
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/hw2/app/question/page.tsx",
-                            lineNumber: 91,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$hw2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            onClick: ()=>nextQuset(1),
-                            children: [
-                                " ",
-                                questionData[questionIndex].options[1].text
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/hw2/app/question/page.tsx",
-                            lineNumber: 92,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$hw2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            onClick: ()=>nextQuset(2),
-                            children: [
-                                " ",
-                                questionData[questionIndex].options[2].text
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/hw2/app/question/page.tsx",
-                            lineNumber: 93,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/hw2/app/question/page.tsx",
-                    lineNumber: 89,
-                    columnNumber: 9
-                }, this),
+                "結果，目前積分：",
+                psyData.score,
+                psyResult,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$hw2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$hw2$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                    className: "text-white bg-black px-3 py-2 rounded-md",
-                    href: "prepare",
-                    children: "準備看結果"
+                    className: "text-white bg-black px-3 py-2",
+                    href: "/",
+                    children: "再玩一次"
                 }, void 0, false, {
                     fileName: "[project]/hw2/app/question/page.tsx",
-                    lineNumber: 98,
-                    columnNumber: 10
+                    lineNumber: 41,
+                    columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/hw2/app/question/page.tsx",
-            lineNumber: 85,
+            lineNumber: 35,
             columnNumber: 7
         }, this)
     }, void 0, false);
 }
-_s(Home, "sC6vDYHrj/Ks7RY3wzlpK0LX2v8=");
-_c = Home;
+_s(Result, "xRpksYy44PvpqYGsLmNPOJY1hEw=", false, function() {
+    return [
+        usePsyStore
+    ];
+});
+_c = Result;
 var _c;
-__turbopack_context__.k.register(_c, "Home");
+__turbopack_context__.k.register(_c, "Result");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }

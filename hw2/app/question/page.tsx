@@ -2,80 +2,39 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import { usePsyStore } from "@/store/store";
 
 
 
 export default function Home() {
 
+const psyData = usePsyStore((state) => state.psyData);
+const setScore = usePsyStore((state) => state.setScore);
+
+
+
 const router = useRouter()
 
 
 
- let questionData = [
-    {
-    title: "question A",
-          options: [
-            {
-            text:"option A",
-            value: 1
-            },
-            {
-            text:"option B",
-            value: 2
-            },
-            {
-            text:"option C",
-            value: 3
-            }
-                  ]
-   },
-            {title: "question B",
-              options: [
-                {
-                text:"option A",
-                value: 1
-                },
-                {
-                text:"option B",
-                value: 2
-                }, 
-                {
-                text:"option C",
-                value: 3
-                }
-                
-    ]
-  },
-            {title: "question C",
-              options: [
-                {
-                text:"option A",
-                value: 1
-                },
-                {
-                text:"option B",
-                value: 2
-                }, 
-                {
-                text:"option C",
-                value: 3
-                }
-          ]
-          },
-          ]
+const questionData = psyData.quizData;
   
 
 const[questionIndex, setQuestionIndex  ]    = useState(0);     
 
 
-function nextQuset(optionIndex:any){
+function nextQuset(optionIndex: number) {
+
+  console.log   ("目前分數" + psyData.score)
 
   console.log   ("使用者選擇：" + optionIndex);
 
+  const selectedValue = questionData?.[questionIndex]?.options?.[optionIndex]?.value ?? 0;
+  setScore(psyData.score + selectedValue);
 
   if(questionIndex != questionData.length-1){
   console.log   ("下一題");
-  setQuestionIndex(questionIndex+1);
+  setQuestionIndex(questionIndex + 1);
 
   }else{
     console.log   ("準備進入結果");
