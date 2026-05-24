@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/W/Documents/GitHub/week%2010/hw2/app/result/page.tsx"],"sourcesContent":["\"use client\"\nimport Link from \"next/link\";\n\nimport { useState, useEffect } from \"react\";\n\nexport default function Home() {\n\n\n\n  return (\n    <>\n\n      \n     \n      <div className=\"flex flex-col items-center justify-center gap-4\">\n      \n         <Link className=\"text-white bg-black px-3 py-2 rounded-md\" href=\"/\">再玩一次</Link>\n      </div>\n    </>\n  );\n}\n"],"names":["Home","className","href"],"mappings":";;;;;AACA;AADA;;;AAKe,SAASA;IAItB,qBACE;kBAIE,cAAA,qPAAC;YAAIC,WAAU;sBAEZ,cAAA,qPAAC,8KAAI;gBAACA,WAAU;gBAA2CC,MAAK;0BAAI;;;;;;;;;;;;AAI7E"}}]
-}
